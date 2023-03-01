@@ -11,7 +11,7 @@ function isHabitablePlanet(planet) {
 }
 
 fs.createReadStream('kepler_data.csv') 
-//This gives us an event emitter to react to events using the '.on' function
+//This will give us an event emitter to react to events using the '.on' function
     .pipe(parse({
         comment: '#', //Treats lines starting with # as comments
         columns: true, //Returns csv file as a JS Object with Key Value pairs
